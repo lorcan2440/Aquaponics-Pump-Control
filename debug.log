@@ -1,0 +1,704 @@
+2026-03-14 13:47:46.417028 - INFO - Connecting directly to BLE address: 08:3A:F2:B0:A7:9A
+2026-03-14 13:47:49.804147 - INFO - BLE connected
+2026-03-14 13:47:49.867974 - INFO - PIR notification value=0
+2026-03-14 13:47:51.389414 - INFO - PIR notification value=1
+2026-03-14 13:47:52.516761 - INFO - PIR notification value=0
+2026-03-14 13:47:56.067610 - INFO - PIR notification value=1
+2026-03-14 13:47:57.128383 - INFO - PIR notification value=0
+2026-03-14 13:47:58.818137 - INFO - BLE notifications stopped
+2026-03-14 13:47:58.932297 - INFO - BLE disconnected
+2026-03-14 13:49:38.488326 - INFO - Connecting directly to BLE address: 08:3A:F2:B0:A7:9A
+2026-03-14 13:50:08.757563 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 40, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 48, in _run_ble
+    async with BleakClient(self.device_address) as client:
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 598, in __aenter__
+    await self.connect()
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 620, in connect
+    await self._backend.connect(self._pair_before_connect, **kwargs)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 230, in connect
+    raise BleakDeviceNotFoundError(
+bleak.exc.BleakDeviceNotFoundError: Device with address 08:3A:F2:B0:A7:9A was not found.
+2026-03-14 13:50:08.773722 - ERROR - BLE error: Device with address 08:3A:F2:B0:A7:9A was not found.
+2026-03-14 13:52:52.824998 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 43, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 69, in _run_ble
+    raise RuntimeError(
+RuntimeError: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:52:52.824998 - ERROR - BLE error: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:54:19.188439 - INFO - BLE scan attempt 1/5 started
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-63 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-62 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='C1:EC:29:41:D0:46' rssi=-53 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-93 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-93 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-93 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='D7:DA:FA:F0:09:E8' rssi=-87 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-71 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='C9:0D:EF:07:A6:D6' rssi=-72 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='' local_name='' address='C8:C6:B5:F7:49:66' rssi=-70 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-62 uuids=[]
+2026-03-14 13:54:23.394471 - INFO - BLE scan attempt 2/5 started
+2026-03-14 13:54:27.442622 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-59 uuids=[]
+2026-03-14 13:54:27.442622 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-66 uuids=[]
+2026-03-14 13:54:27.443970 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-85 uuids=[]
+2026-03-14 13:54:27.443970 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-74 uuids=[]
+2026-03-14 13:54:27.444990 - INFO - BLE device detected: name='' local_name='' address='D2:01:31:72:4E:C9' rssi=-71 uuids=[]
+2026-03-14 13:54:27.446021 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-69 uuids=[]
+2026-03-14 13:54:27.446021 - INFO - BLE device detected: name='' local_name='' address='F1:71:C3:9C:BF:99' rssi=-70 uuids=[]
+2026-03-14 13:54:27.446990 - INFO - BLE device detected: name='' local_name='' address='D5:19:A4:29:D0:BC' rssi=-85 uuids=[]
+2026-03-14 13:54:27.446990 - INFO - BLE device detected: name='' local_name='' address='C2:03:29:80:FE:39' rssi=-96 uuids=[]
+2026-03-14 13:54:27.447989 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-96 uuids=[]
+2026-03-14 13:54:27.447989 - INFO - BLE device detected: name='' local_name='' address='C1:EC:29:41:D0:46' rssi=-50 uuids=[]
+2026-03-14 13:54:27.448978 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-97 uuids=[]
+2026-03-14 13:54:27.449995 - INFO - BLE scan attempt 3/5 started
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-96 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-61 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-85 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-70 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-97 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='D8:E1:A7:B7:A8:65' rssi=-59 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-94 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-96 uuids=[]
+2026-03-14 13:54:31.506010 - INFO - BLE scan attempt 4/5 started
+2026-03-14 13:54:35.540546 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-62 uuids=[]
+2026-03-14 13:54:35.540546 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-74 uuids=[]
+2026-03-14 13:54:35.545435 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-91 uuids=[]
+2026-03-14 13:54:35.545435 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-66 uuids=[]
+2026-03-14 13:54:35.545435 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-86 uuids=[]
+2026-03-14 13:54:35.545435 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-85 uuids=[]
+2026-03-14 13:54:35.545435 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-98 uuids=[]
+2026-03-14 13:54:35.547446 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-99 uuids=[]
+2026-03-14 13:54:35.547446 - INFO - BLE scan attempt 5/5 started
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-95 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-98 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-62 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='C1:EC:29:41:D0:46' rssi=-52 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-75 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-94 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='D5:19:A4:29:D0:BC' rssi=-67 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-67 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-100 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-93 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-60 uuids=[]
+2026-03-14 13:54:39.591327 - INFO - BLE device detected: name='' local_name='' address='F3:48:77:0C:70:1C' rssi=-95 uuids=[]
+2026-03-14 13:54:39.591327 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "C:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 43, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 87, in _run_ble
+    raise RuntimeError(
+RuntimeError: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:54:39.608995 - ERROR - BLE error: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:56:55.119996 - INFO - BLE scan attempt 1/5 started
+2026-03-14 13:56:59.313797 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-92 uuids=[]
+2026-03-14 13:56:59.314798 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-60 uuids=[]
+2026-03-14 13:56:59.314798 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-94 uuids=[]
+2026-03-14 13:56:59.314798 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-95 uuids=[]
+2026-03-14 13:56:59.315906 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-62 uuids=[]
+2026-03-14 13:56:59.315906 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-69 uuids=[]
+2026-03-14 13:56:59.316774 - INFO - BLE device detected: name='' local_name='' address='3E:1E:D9:B3:73:8E' rssi=-100 uuids=[]
+2026-03-14 13:56:59.316774 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-65 uuids=[]
+2026-03-14 13:56:59.316774 - INFO - BLE device detected: name='' local_name='' address='C9:0D:EF:07:A6:D6' rssi=-72 uuids=[]
+2026-03-14 13:56:59.317791 - INFO - BLE device detected: name='' local_name='' address='18:2C:47:BB:A9:CF' rssi=-97 uuids=[]
+2026-03-14 13:56:59.317791 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-98 uuids=[]
+2026-03-14 13:56:59.318788 - INFO - BLE scan attempt 2/5 started
+2026-03-14 13:57:03.373837 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-68 uuids=[]
+2026-03-14 13:57:03.374840 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-98 uuids=[]
+2026-03-14 13:57:03.374840 - INFO - BLE device detected: name='' local_name='' address='D8:E1:A7:B7:A8:65' rssi=-59 uuids=[]
+2026-03-14 13:57:03.375839 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-65 uuids=[]
+2026-03-14 13:57:03.375839 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-96 uuids=[]
+2026-03-14 13:57:03.376838 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-74 uuids=[]
+2026-03-14 13:57:03.376838 - INFO - BLE device detected: name='' local_name='' address='C1:EC:29:41:D0:46' rssi=-55 uuids=[]
+2026-03-14 13:57:03.376838 - INFO - BLE device detected: name='' local_name='' address='D7:DA:FA:F0:09:E8' rssi=-96 uuids=[]
+2026-03-14 13:57:03.377841 - INFO - BLE device detected: name='' local_name='' address='3E:1E:D9:B3:73:8E' rssi=-98 uuids=[]
+2026-03-14 13:57:03.377841 - INFO - BLE device detected: name='' local_name='' address='18:2C:47:BB:A9:CF' rssi=-98 uuids=[]
+2026-03-14 13:57:03.377841 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-90 uuids=[]
+2026-03-14 13:57:03.378840 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-86 uuids=[]
+2026-03-14 13:57:03.378840 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-62 uuids=[]
+2026-03-14 13:57:03.379841 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-85 uuids=[]
+2026-03-14 13:57:03.379841 - INFO - BLE device detected: name='' local_name='' address='F3:48:77:0C:70:1C' rssi=-99 uuids=[]
+2026-03-14 13:57:03.379841 - INFO - BLE device detected: name='' local_name='' address='F1:71:C3:9C:BF:99' rssi=-70 uuids=[]
+2026-03-14 13:57:03.380841 - INFO - BLE scan attempt 3/5 started
+2026-03-14 13:57:07.422223 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-69 uuids=[]
+2026-03-14 13:57:07.422223 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-91 uuids=[]
+2026-03-14 13:57:07.423230 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-90 uuids=[]
+2026-03-14 13:57:07.423230 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-96 uuids=[]
+2026-03-14 13:57:07.424221 - INFO - BLE device detected: name='' local_name='' address='18:2C:47:BB:A9:CF' rssi=-94 uuids=[]
+2026-03-14 13:57:07.424221 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-70 uuids=[]
+2026-03-14 13:57:07.424221 - INFO - BLE device detected: name='' local_name='' address='3E:1E:D9:B3:73:8E' rssi=-89 uuids=[]
+2026-03-14 13:57:07.425221 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-91 uuids=[]
+2026-03-14 13:57:07.425221 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-61 uuids=[]
+2026-03-14 13:57:07.425221 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-65 uuids=[]
+2026-03-14 13:57:07.426219 - INFO - BLE scan attempt 4/5 started
+2026-03-14 13:57:11.460933 - INFO - BLE device detected: name='' local_name='' address='18:2C:47:BB:A9:CF' rssi=-94 uuids=[]
+2026-03-14 13:57:11.461900 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-82 uuids=[]
+2026-03-14 13:57:11.461900 - INFO - BLE device detected: name='' local_name='' address='3E:1E:D9:B3:73:8E' rssi=-95 uuids=[]
+2026-03-14 13:57:11.461900 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-86 uuids=[]
+2026-03-14 13:57:11.462905 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-59 uuids=[]
+2026-03-14 13:57:11.462905 - INFO - BLE device detected: name='' local_name='' address='E2:FA:D4:AB:DF:E3' rssi=-62 uuids=[]
+2026-03-14 13:57:11.463893 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-82 uuids=[]
+2026-03-14 13:57:11.463893 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-92 uuids=[]
+2026-03-14 13:57:11.463893 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-94 uuids=[]
+2026-03-14 13:57:11.464900 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-99 uuids=[]
+2026-03-14 13:57:11.464900 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-69 uuids=[]
+2026-03-14 13:57:11.464900 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-68 uuids=[]
+2026-03-14 13:57:11.465899 - INFO - BLE device detected: name='' local_name='' address='78:09:0D:86:D0:C5' rssi=-96 uuids=[]
+2026-03-14 13:57:11.465899 - INFO - BLE scan attempt 5/5 started
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-93 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-70 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='D8:E1:A7:B7:A8:65' rssi=-62 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-86 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='72:9A:39:21:07:17' rssi=-59 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-98 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='18:2C:47:BB:A9:CF' rssi=-91 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='46:5F:F1:35:5E:A6' rssi=-65 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-86 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-93 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='F1:71:C3:9C:BF:99' rssi=-70 uuids=[]
+2026-03-14 13:57:15.509112 - INFO - BLE device detected: name='' local_name='' address='F3:48:77:0C:70:1C' rssi=-96 uuids=[]
+2026-03-14 13:57:15.516801 - INFO - BLE device detected: name='' local_name='' address='3E:1E:D9:B3:73:8E' rssi=-96 uuids=[]
+2026-03-14 13:57:15.516801 - INFO - BLE device detected: name='' local_name='' address='C1:EC:29:41:D0:46' rssi=-52 uuids=[]
+2026-03-14 13:57:15.516801 - INFO - BLE device detected: name='' local_name='' address='78:09:0D:86:D0:C5' rssi=-91 uuids=[]
+2026-03-14 13:57:15.519498 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 43, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 87, in _run_ble
+    raise RuntimeError(
+RuntimeError: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:57:15.523628 - ERROR - BLE error: Could not find BLE device 'PIR-UnoWiFiRev2' or service '19b10000-e8f2-537e-4f6c-d104768a1214'
+2026-03-14 13:59:11.655897 - INFO - BLE scan attempt 1/5 started
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='20:34:20:B3:64:5E' rssi=-89 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='69:CB:35:FA:C5:FB' rssi=-84 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-62 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='4C:02:87:22:9B:F7' rssi=-74 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-51 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-72 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='48:EC:BA:29:EC:CA' rssi=-97 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='F1:71:C3:9C:BF:99' rssi=-75 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-100 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - BLE device detected: name='' local_name='' address='4D:DA:DA:96:2C:A4' rssi=-90 uuids=[]
+2026-03-14 13:59:15.853718 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 13:59:15.853718 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A)
+2026-03-14 13:59:18.109928 - INFO - BLE connected
+2026-03-14 13:59:18.157006 - INFO - PIR notification value=0
+2026-03-14 13:59:20.711751 - INFO - PIR notification value=1
+2026-03-14 13:59:21.801824 - INFO - PIR notification value=0
+2026-03-14 13:59:23.007739 - INFO - BLE notifications stopped
+2026-03-14 13:59:23.122129 - INFO - BLE disconnected
+2026-03-14 14:07:54.417706 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:07:58.610668 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-69 uuids=[]
+2026-03-14 14:07:58.610668 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-62 uuids=[]
+2026-03-14 14:07:58.611668 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-86 uuids=[]
+2026-03-14 14:07:58.611668 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-60 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:07:58.611668 - INFO - BLE device detected: name='' local_name='' address='DE:45:A1:0F:2B:DE' rssi=-66 uuids=[]
+2026-03-14 14:07:58.612665 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:07:58.612665 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-90 uuids=[]
+2026-03-14 14:07:58.612665 - INFO - BLE device detected: name='' local_name='' address='CD:53:36:52:BA:FB' rssi=-86 uuids=[]
+2026-03-14 14:07:58.613665 - INFO - BLE device detected: name='' local_name='' address='D2:92:4B:4A:F4:85' rssi=-74 uuids=[]
+2026-03-14 14:07:58.613665 - INFO - BLE device detected: name='' local_name='' address='CF:62:C9:2F:99:58' rssi=-75 uuids=[]
+2026-03-14 14:07:58.613665 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-57 uuids=[]
+2026-03-14 14:07:58.614666 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:07:58.614666 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A)
+2026-03-14 14:08:28.719049 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 433, in connect
+    self.services = await self._get_services(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 703, in _get_services
+    result = await FutureLike(self._requester.get_gatt_services_async())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 1195, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 1129, in result
+    raise asyncio.CancelledError
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 43, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 93, in _run_ble
+    async with BleakClient(device) as client:
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 598, in __aenter__
+    await self.connect()
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 620, in connect
+    await self._backend.connect(self._pair_before_connect, **kwargs)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 389, in connect
+    async with async_timeout(timeout):
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\timeouts.py", line 111, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+2026-03-14 14:08:28.734926 - ERROR - BLE error: 
+2026-03-14 14:11:08.964141 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:11:13.182465 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-62 uuids=[]
+2026-03-14 14:11:13.183457 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-87 uuids=[]
+2026-03-14 14:11:13.183457 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-57 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:11:13.184456 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-77 uuids=[]
+2026-03-14 14:11:13.184456 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-65 uuids=[]
+2026-03-14 14:11:13.184456 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-73 uuids=[]
+2026-03-14 14:11:13.185455 - INFO - BLE device detected: name='' local_name='' address='56:1C:C1:81:D1:B5' rssi=-85 uuids=[]
+2026-03-14 14:11:13.185455 - INFO - BLE device detected: name='' local_name='' address='C3:EC:EB:A7:92:50' rssi=-101 uuids=[]
+2026-03-14 14:11:13.185455 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:11:13.186454 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/5, timeout 60.0s
+2026-03-14 14:12:13.274806 - WARNING - BLE connection attempt 1/5 timed out
+2026-03-14 14:12:13.275806 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:12:17.323638 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-74 uuids=[]
+2026-03-14 14:12:17.323638 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-75 uuids=[]
+2026-03-14 14:12:17.324631 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-59 uuids=[]
+2026-03-14 14:12:17.324631 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-74 uuids=[]
+2026-03-14 14:12:17.324631 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-93 uuids=[]
+2026-03-14 14:12:17.325626 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:12:17.325626 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-86 uuids=[]
+2026-03-14 14:12:17.325626 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-86 uuids=[]
+2026-03-14 14:12:17.326625 - INFO - BLE device detected: name='' local_name='' address='DE:45:A1:0F:2B:DE' rssi=-64 uuids=[]
+2026-03-14 14:12:17.326625 - INFO - BLE device detected: name='' local_name='' address='DC:32:43:F3:D2:1A' rssi=-60 uuids=[]
+2026-03-14 14:12:17.326625 - INFO - BLE device detected: name='' local_name='' address='D2:92:4B:4A:F4:85' rssi=-69 uuids=[]
+2026-03-14 14:12:17.327625 - INFO - BLE device detected: name='' local_name='' address='CD:53:36:52:BA:FB' rssi=-76 uuids=[]
+2026-03-14 14:12:17.327625 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-58 uuids=[]
+2026-03-14 14:12:17.327625 - INFO - BLE device detected: name='' local_name='' address='FB:4F:D4:27:7C:53' rssi=-102 uuids=[]
+2026-03-14 14:12:17.328625 - INFO - BLE device detected: name='' local_name='' address='CF:62:C9:2F:99:58' rssi=-82 uuids=[]
+2026-03-14 14:12:17.328625 - INFO - BLE scan attempt 2/5 started
+2026-03-14 14:12:21.369973 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-68 uuids=[]
+2026-03-14 14:12:21.369973 - INFO - BLE device detected: name='' local_name='' address='F4:CE:0D:23:27:E3' rssi=-76 uuids=[]
+2026-03-14 14:12:21.369973 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-64 uuids=[]
+2026-03-14 14:12:21.370973 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-85 uuids=[]
+2026-03-14 14:12:21.370973 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-58 uuids=[]
+2026-03-14 14:12:21.370973 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-84 uuids=[]
+2026-03-14 14:12:21.371973 - INFO - BLE device detected: name='' local_name='' address='E5:8E:16:C8:AA:3A' rssi=-71 uuids=[]
+2026-03-14 14:12:21.371973 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-87 uuids=[]
+2026-03-14 14:12:21.371973 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:12:21.372973 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-97 uuids=[]
+2026-03-14 14:12:21.372973 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-89 uuids=[]
+2026-03-14 14:12:21.372973 - INFO - BLE scan attempt 3/5 started
+2026-03-14 14:14:15.162629 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:14:19.338335 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-69 uuids=[]
+2026-03-14 14:14:19.339338 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-78 uuids=[]
+2026-03-14 14:14:19.339338 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-63 uuids=[]
+2026-03-14 14:14:19.340336 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-73 uuids=[]
+2026-03-14 14:14:19.341336 - INFO - BLE device detected: name='' local_name='' address='D2:92:4B:4A:F4:85' rssi=-73 uuids=[]
+2026-03-14 14:14:19.341336 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-88 uuids=[]
+2026-03-14 14:14:19.341336 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-83 uuids=[]
+2026-03-14 14:14:19.342336 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:14:19.342336 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-77 uuids=[]
+2026-03-14 14:14:19.342336 - INFO - BLE scan attempt 2/5 started
+2026-03-14 14:14:23.390997 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-70 uuids=[]
+2026-03-14 14:14:23.392002 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-92 uuids=[]
+2026-03-14 14:14:23.392002 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-73 uuids=[]
+2026-03-14 14:14:23.392993 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-75 uuids=[]
+2026-03-14 14:14:23.392993 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-80 uuids=[]
+2026-03-14 14:14:23.392993 - INFO - BLE device detected: name='' local_name='' address='CD:53:36:52:BA:FB' rssi=-78 uuids=[]
+2026-03-14 14:14:23.393993 - INFO - BLE device detected: name='' local_name='' address='CF:62:C9:2F:99:58' rssi=-76 uuids=[]
+2026-03-14 14:14:23.393993 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-81 uuids=[]
+2026-03-14 14:14:23.394996 - INFO - BLE device detected: name='' local_name='' address='E3:99:6F:5F:E9:AE' rssi=-68 uuids=[]
+2026-03-14 14:14:23.394996 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-91 uuids=[]
+2026-03-14 14:14:23.394996 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-73 uuids=[]
+2026-03-14 14:14:23.395997 - INFO - BLE device detected: name='' local_name='' address='F4:CE:0D:23:27:E3' rssi=-81 uuids=[]
+2026-03-14 14:14:23.395997 - INFO - BLE device detected: name='' local_name='' address='DE:45:A1:0F:2B:DE' rssi=-73 uuids=[]
+2026-03-14 14:14:23.396995 - INFO - BLE scan attempt 3/5 started
+2026-03-14 14:14:27.445782 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-61 uuids=[]
+2026-03-14 14:14:27.445782 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-80 uuids=[]
+2026-03-14 14:14:27.445782 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-75 uuids=[]
+2026-03-14 14:14:27.446782 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-67 uuids=[]
+2026-03-14 14:14:27.446782 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-93 uuids=[]
+2026-03-14 14:14:27.447790 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-87 uuids=[]
+2026-03-14 14:14:27.447790 - INFO - BLE device detected: name='' local_name='' address='D2:92:4B:4A:F4:85' rssi=-71 uuids=[]
+2026-03-14 14:14:27.448781 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-70 uuids=[]
+2026-03-14 14:14:27.448781 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-76 uuids=[]
+2026-03-14 14:14:27.449781 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-86 uuids=[]
+2026-03-14 14:14:27.449781 - INFO - BLE scan attempt 4/5 started
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-74 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-60 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='DC:32:43:F3:D2:1A' rssi=-61 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-84 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-73 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-86 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-68 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='CC:C2:62:F4:FD:40' rssi=-100 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-79 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-76 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-80 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-74 uuids=[]
+2026-03-14 14:14:31.494782 - INFO - BLE scan attempt 5/5 started
+2026-03-14 14:14:35.543425 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-74 uuids=[]
+2026-03-14 14:14:35.543425 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-67 uuids=[]
+2026-03-14 14:14:35.543425 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-74 uuids=[]
+2026-03-14 14:14:35.543425 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-87 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-77 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-60 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-74 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='CD:53:36:52:BA:FB' rssi=-77 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='DD:A5:A6:BF:C3:66' rssi=-75 uuids=[]
+2026-03-14 14:14:35.549552 - INFO - BLE device detected: name='' local_name='' address='E5:8E:16:C8:AA:3A' rssi=-85 uuids=[]
+2026-03-14 14:14:35.551566 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-74 uuids=[]
+2026-03-14 14:14:35.551566 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-90 uuids=[]
+2026-03-14 14:14:35.551566 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-70 uuids=[]
+2026-03-14 14:14:35.551566 - INFO - BLE device detected: name='' local_name='' address='D0:22:EE:00:C2:BB' rssi=-100 uuids=[]
+2026-03-14 14:14:35.551566 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-68 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-58 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-73 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-78 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-90 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-64 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-84 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-80 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-75 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-76 uuids=[]
+2026-03-14 14:14:39.587303 - INFO - BLE scan attempt 2/5 started
+2026-03-14 14:14:43.628399 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-74 uuids=[]
+2026-03-14 14:14:43.629910 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-76 uuids=[]
+2026-03-14 14:14:43.629910 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-94 uuids=[]
+2026-03-14 14:14:43.630935 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-75 uuids=[]
+2026-03-14 14:14:43.630935 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-68 uuids=[]
+2026-03-14 14:14:43.630935 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-82 uuids=[]
+2026-03-14 14:14:43.631949 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-85 uuids=[]
+2026-03-14 14:14:43.631949 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:14:43.631949 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-60 uuids=[]
+2026-03-14 14:14:43.631949 - INFO - BLE device detected: name='' local_name='' address='DC:32:43:F3:D2:1A' rssi=-49 uuids=[]
+2026-03-14 14:14:43.632925 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-81 uuids=[]
+2026-03-14 14:14:43.632925 - INFO - BLE scan attempt 3/5 started
+2026-03-14 14:15:06.588474 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-80 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-94 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-80 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-57 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-82 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-59 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='D7:19:4F:99:DF:36' rssi=-60 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='DC:32:43:F3:D2:1A' rssi=-58 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-77 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-63 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-75 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:15:10.779780 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:15:10.779780 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/3, timeout 45.0s
+2026-03-14 14:15:12.740080 - INFO - BLE connected
+2026-03-14 14:15:12.800575 - INFO - PIR notification value=0
+2026-03-14 14:15:16.258177 - INFO - PIR notification value=1
+2026-03-14 14:15:17.400828 - INFO - PIR notification value=0
+2026-03-14 14:15:22.220139 - INFO - PIR notification value=1
+2026-03-14 14:15:23.314527 - INFO - PIR notification value=0
+2026-03-14 14:15:28.648882 - INFO - PIR notification value=1
+2026-03-14 14:15:29.751869 - INFO - PIR notification value=0
+2026-03-14 14:15:33.813972 - INFO - PIR notification value=1
+2026-03-14 14:15:34.952140 - INFO - PIR notification value=0
+2026-03-14 14:15:39.534428 - INFO - PIR notification value=1
+2026-03-14 14:15:40.683324 - INFO - PIR notification value=0
+2026-03-14 14:15:45.845773 - INFO - PIR notification value=1
+2026-03-14 14:15:46.940306 - INFO - PIR notification value=0
+2026-03-14 14:15:49.304461 - INFO - BLE notifications stopped
+2026-03-14 14:15:49.423061 - INFO - BLE disconnected
+2026-03-14 14:15:56.021821 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='C6:02:FF:10:00:66' rssi=-69 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='DF:16:A0:14:49:97' rssi=-81 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-83 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='78:C5:E8:C2:9F:37' rssi=-81 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='74:36:B0:A2:01:0C' rssi=-73 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='6F:37:AD:5E:76:0F' rssi=-61 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-56 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='47:7D:61:D4:0B:D6' rssi=-93 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-87 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-59 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-63 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='72:C3:A9:10:68:5C' rssi=-99 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - BLE device detected: name='' local_name='' address='70:C5:71:F8:5F:8A' rssi=-81 uuids=[]
+2026-03-14 14:16:00.222591 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:16:00.222591 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/3, timeout 45.0s
+2026-03-14 14:16:02.375112 - INFO - BLE connected
+2026-03-14 14:16:02.432863 - INFO - PIR notification value=0
+2026-03-14 14:16:04.311667 - INFO - PIR notification value=1
+2026-03-14 14:16:05.358816 - INFO - PIR notification value=0
+2026-03-14 14:16:10.162705 - INFO - PIR notification value=1
+2026-03-14 14:16:11.299671 - INFO - PIR notification value=0
+2026-03-14 14:16:15.364336 - INFO - PIR notification value=1
+2026-03-14 14:16:16.471941 - INFO - PIR notification value=0
+2026-03-14 14:16:20.803770 - INFO - PIR notification value=1
+2026-03-14 14:16:21.899620 - INFO - PIR notification value=0
+2026-03-14 14:16:27.697818 - INFO - PIR notification value=1
+2026-03-14 14:16:28.750999 - INFO - PIR notification value=0
+2026-03-14 14:16:33.192020 - INFO - PIR notification value=1
+2026-03-14 14:16:34.249639 - INFO - PIR notification value=0
+2026-03-14 14:16:38.194479 - INFO - PIR notification value=1
+2026-03-14 14:16:39.287860 - INFO - PIR notification value=0
+2026-03-14 14:16:43.521197 - INFO - PIR notification value=1
+2026-03-14 14:16:44.615253 - INFO - PIR notification value=0
+2026-03-14 14:16:48.220309 - INFO - PIR notification value=1
+2026-03-14 14:16:49.315549 - INFO - PIR notification value=0
+2026-03-14 14:16:53.568134 - INFO - PIR notification value=1
+2026-03-14 14:16:54.665177 - INFO - PIR notification value=0
+2026-03-14 14:16:58.691686 - INFO - PIR notification value=1
+2026-03-14 14:16:59.781554 - INFO - PIR notification value=0
+2026-03-14 14:17:04.028916 - INFO - PIR notification value=1
+2026-03-14 14:17:05.123596 - INFO - PIR notification value=0
+2026-03-14 14:17:08.841596 - INFO - PIR notification value=1
+2026-03-14 14:17:09.931414 - INFO - PIR notification value=0
+2026-03-14 14:17:13.830789 - INFO - PIR notification value=1
+2026-03-14 14:17:14.880461 - INFO - PIR notification value=0
+2026-03-14 14:17:19.692853 - INFO - PIR notification value=1
+2026-03-14 14:17:20.731138 - INFO - PIR notification value=0
+2026-03-14 14:17:25.773757 - INFO - PIR notification value=1
+2026-03-14 14:17:26.911308 - INFO - PIR notification value=0
+2026-03-14 14:17:30.631001 - INFO - PIR notification value=1
+2026-03-14 14:17:31.714276 - INFO - PIR notification value=0
+2026-03-14 14:17:36.228130 - INFO - PIR notification value=1
+2026-03-14 14:17:37.314788 - INFO - PIR notification value=0
+2026-03-14 14:17:41.699705 - INFO - PIR notification value=1
+2026-03-14 14:17:42.749446 - INFO - PIR notification value=0
+2026-03-14 14:17:46.336928 - INFO - PIR notification value=1
+2026-03-14 14:17:47.430670 - INFO - PIR notification value=0
+2026-03-14 14:17:50.887645 - INFO - PIR notification value=1
+2026-03-14 14:17:51.980494 - INFO - PIR notification value=0
+2026-03-14 14:17:55.918853 - INFO - PIR notification value=1
+2026-03-14 14:17:57.012641 - INFO - PIR notification value=0
+2026-03-14 14:18:06.944267 - INFO - PIR notification value=1
+2026-03-14 14:18:07.980268 - INFO - PIR notification value=0
+2026-03-14 14:18:11.624904 - INFO - PIR notification value=1
+2026-03-14 14:18:12.713470 - INFO - PIR notification value=0
+2026-03-14 14:18:16.654944 - INFO - PIR notification value=1
+2026-03-14 14:18:17.750650 - INFO - PIR notification value=0
+2026-03-14 14:18:21.330188 - INFO - PIR notification value=1
+2026-03-14 14:18:22.431965 - INFO - PIR notification value=0
+2026-03-14 14:18:28.250515 - INFO - PIR notification value=1
+2026-03-14 14:18:29.388545 - INFO - PIR notification value=0
+2026-03-14 14:18:35.285681 - INFO - PIR notification value=1
+2026-03-14 14:18:36.432727 - INFO - PIR notification value=0
+2026-03-14 14:18:39.932134 - INFO - PIR notification value=1
+2026-03-14 14:18:41.026369 - INFO - PIR notification value=0
+2026-03-14 14:18:56.292154 - INFO - PIR notification value=1
+2026-03-14 14:18:57.379216 - INFO - PIR notification value=0
+2026-03-14 14:19:01.458188 - INFO - PIR notification value=1
+2026-03-14 14:19:02.596153 - INFO - PIR notification value=0
+2026-03-14 14:19:06.264534 - INFO - PIR notification value=1
+2026-03-14 14:19:07.312272 - INFO - PIR notification value=0
+2026-03-14 14:19:11.739723 - INFO - PIR notification value=1
+2026-03-14 14:19:12.789750 - INFO - PIR notification value=0
+2026-03-14 14:19:18.301754 - INFO - PIR notification value=1
+2026-03-14 14:19:19.440104 - INFO - PIR notification value=0
+2026-03-14 14:19:23.897049 - INFO - PIR notification value=1
+2026-03-14 14:19:24.996140 - INFO - PIR notification value=0
+2026-03-14 14:19:28.748688 - INFO - PIR notification value=1
+2026-03-14 14:19:29.896407 - INFO - PIR notification value=0
+2026-03-14 14:19:35.452935 - INFO - PIR notification value=1
+2026-03-14 14:19:36.590411 - INFO - PIR notification value=0
+2026-03-14 14:19:41.565664 - INFO - PIR notification value=1
+2026-03-14 14:19:42.679754 - INFO - PIR notification value=0
+2026-03-14 14:19:47.573509 - INFO - BLE notifications stopped
+2026-03-14 14:19:47.687786 - INFO - BLE disconnected
+2026-03-14 14:23:26.738874 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:23:30.935802 - INFO - BLE device detected: name='' local_name='' address='3F:1A:D6:91:A5:C5' rssi=-75 uuids=[]
+2026-03-14 14:23:30.936802 - INFO - BLE device detected: name='' local_name='' address='E4:B9:8B:E5:92:4E' rssi=-66 uuids=[]
+2026-03-14 14:23:30.936802 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-58 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:23:30.937803 - INFO - BLE device detected: name='' local_name='' address='40:D1:5C:97:26:C0' rssi=-64 uuids=[]
+2026-03-14 14:23:30.937803 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-60 uuids=[]
+2026-03-14 14:23:30.937803 - INFO - BLE device detected: name='' local_name='' address='59:CE:04:94:99:03' rssi=-66 uuids=[]
+2026-03-14 14:23:30.938804 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-81 uuids=[]
+2026-03-14 14:23:30.938804 - INFO - BLE device detected: name='' local_name='' address='20:24:2D:02:55:3F' rssi=-74 uuids=[]
+2026-03-14 14:23:30.939802 - INFO - BLE device detected: name='' local_name='' address='D0:22:EE:00:C2:BB' rssi=-94 uuids=[]
+2026-03-14 14:23:30.939802 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-80 uuids=[]
+2026-03-14 14:23:30.939802 - INFO - BLE device detected: name='' local_name='' address='CA:48:28:45:7F:AA' rssi=-84 uuids=[]
+2026-03-14 14:23:30.940804 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:23:30.940804 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/3, timeout 45.0s
+2026-03-14 14:23:33.219311 - INFO - BLE connected
+2026-03-14 14:23:33.271311 - INFO - PIR notification value=1
+2026-03-14 14:23:34.392511 - INFO - PIR notification value=0
+2026-03-14 14:23:37.988678 - INFO - PIR notification value=1
+2026-03-14 14:23:39.077365 - INFO - PIR notification value=0
+2026-03-14 14:23:42.576395 - INFO - PIR notification value=1
+2026-03-14 14:23:43.700556 - INFO - PIR notification value=0
+2026-03-14 14:23:49.125646 - INFO - PIR notification value=1
+2026-03-14 14:23:50.173522 - INFO - PIR notification value=0
+2026-03-14 14:24:08.689726 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 49, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 132, in _run_ble
+    await client.stop_notify(self.characteristic_uuid)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 872, in stop_notify
+    await self._backend.stop_notify(characteristic)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 1063, in stop_notify
+    raise BleakError("Not connected")
+bleak.exc.BleakError: Not connected
+2026-03-14 14:24:08.715269 - ERROR - BLE error: Not connected
+2026-03-14 14:26:15.368939 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:26:19.542812 - INFO - BLE device detected: name='' local_name='' address='68:1B:9C:DD:74:71' rssi=-77 uuids=[]
+2026-03-14 14:26:19.542812 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-58 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:26:19.543821 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-81 uuids=[]
+2026-03-14 14:26:19.543821 - INFO - BLE device detected: name='' local_name='' address='5B:21:FF:74:38:B3' rssi=-79 uuids=[]
+2026-03-14 14:26:19.543821 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-76 uuids=[]
+2026-03-14 14:26:19.544810 - INFO - BLE device detected: name='' local_name='' address='59:CE:04:94:99:03' rssi=-65 uuids=[]
+2026-03-14 14:26:19.544810 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-78 uuids=[]
+2026-03-14 14:26:19.545812 - INFO - BLE device detected: name='' local_name='' address='20:24:2D:02:55:3F' rssi=-79 uuids=[]
+2026-03-14 14:26:19.545812 - INFO - BLE device detected: name='' local_name='' address='4B:92:3F:D7:CC:66' rssi=-75 uuids=[]
+2026-03-14 14:26:19.545812 - INFO - BLE device detected: name='' local_name='' address='C6:02:FF:10:00:66' rssi=-73 uuids=[]
+2026-03-14 14:26:19.546813 - INFO - BLE device detected: name='' local_name='' address='D0:C4:83:7A:F4:9F' rssi=-79 uuids=[]
+2026-03-14 14:26:19.546813 - INFO - BLE device detected: name='' local_name='' address='CB:6A:4C:17:57:8A' rssi=-80 uuids=[]
+2026-03-14 14:26:19.546813 - INFO - BLE device detected: name='' local_name='' address='67:48:07:EC:69:0E' rssi=-75 uuids=[]
+2026-03-14 14:26:19.547813 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:26:19.547813 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/3, timeout 45.0s
+2026-03-14 14:26:21.415935 - INFO - BLE connected
+2026-03-14 14:26:21.461272 - INFO - PIR notification value=0
+2026-03-14 14:26:54.464196 - WARNING - BLE connection dropped
+2026-03-14 14:26:54.589150 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 49, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 154, in _run_ble
+    await client.stop_notify(self.characteristic_uuid)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 872, in stop_notify
+    await self._backend.stop_notify(characteristic)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 1070, in stop_notify
+    await gatt_char.write_client_characteristic_configuration_descriptor_with_result_async(
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\winrt\runtime\_internals.py", line 245, in wait
+    return op.get_results()
+           ^^^^^^^^^^^^^^^^
+OSError: [WinError -2147023673] The operation was canceled by the user.
+2026-03-14 14:26:54.617424 - ERROR - BLE error: [WinError -2147023673] The operation was canceled by the user.
+2026-03-14 14:28:12.599371 - INFO - BLE scan attempt 1/5 started
+2026-03-14 14:28:16.735200 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-62 uuids=[]
+2026-03-14 14:28:16.736213 - INFO - BLE device detected: name='' local_name='' address='59:CE:04:94:99:03' rssi=-70 uuids=[]
+2026-03-14 14:28:16.736213 - INFO - BLE device detected: name='' local_name='' address='4B:92:3F:D7:CC:66' rssi=-75 uuids=[]
+2026-03-14 14:28:16.736213 - INFO - BLE device detected: name='' local_name='' address='C6:02:FF:10:00:66' rssi=-85 uuids=[]
+2026-03-14 14:28:16.737212 - INFO - BLE device detected: name='' local_name='' address='68:1B:9C:DD:74:71' rssi=-81 uuids=[]
+2026-03-14 14:28:16.737212 - INFO - BLE device detected: name='' local_name='' address='D0:C4:83:7A:F4:9F' rssi=-78 uuids=[]
+2026-03-14 14:28:16.737212 - INFO - BLE device detected: name='' local_name='' address='20:24:2D:02:55:3F' rssi=-74 uuids=[]
+2026-03-14 14:28:16.738213 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-80 uuids=[]
+2026-03-14 14:28:16.738213 - INFO - BLE device detected: name='' local_name='' address='67:48:07:EC:69:0E' rssi=-81 uuids=[]
+2026-03-14 14:28:16.738213 - INFO - BLE scan attempt 2/5 started
+2026-03-14 14:28:20.800260 - INFO - BLE device detected: name='' local_name='' address='68:1B:9C:DD:74:71' rssi=-68 uuids=[]
+2026-03-14 14:28:20.801260 - INFO - BLE device detected: name='' local_name='' address='67:48:07:EC:69:0E' rssi=-73 uuids=[]
+2026-03-14 14:28:20.801260 - INFO - BLE device detected: name='' local_name='' address='4B:92:3F:D7:CC:66' rssi=-79 uuids=[]
+2026-03-14 14:28:20.801260 - INFO - BLE device detected: name='[TV] UE48JU6500' local_name='[TV] UE48JU6500' address='F8:04:2E:D9:62:05' rssi=-62 uuids=[]
+2026-03-14 14:28:20.802260 - INFO - BLE device detected: name='' local_name='' address='CA:23:EE:97:39:B9' rssi=-71 uuids=[]
+2026-03-14 14:28:20.802260 - INFO - BLE device detected: name='' local_name='' address='20:24:2D:02:55:3F' rssi=-71 uuids=[]
+2026-03-14 14:28:20.802260 - INFO - BLE device detected: name='' local_name='' address='42:B8:AB:0C:88:AE' rssi=-85 uuids=[]
+2026-03-14 14:28:20.802260 - INFO - BLE device detected: name='' local_name='' address='5B:21:FF:74:38:B3' rssi=-86 uuids=[]
+2026-03-14 14:28:20.803259 - INFO - BLE device detected: name='' local_name='' address='51:72:44:EF:17:84' rssi=-91 uuids=[]
+2026-03-14 14:28:20.803259 - INFO - BLE device detected: name='PIR-UnoWiFiRev2' local_name='PIR-UnoWiFiRev2' address='08:3A:F2:B0:A7:9A' rssi=-58 uuids=['19b10000-e8f2-537e-4f6c-d104768a1214']
+2026-03-14 14:28:20.803259 - INFO - BLE device detected: name='' local_name='' address='59:CE:04:94:99:03' rssi=-66 uuids=[]
+2026-03-14 14:28:20.804260 - INFO - Matched BLE device by name: PIR-UnoWiFiRev2
+2026-03-14 14:28:20.804260 - INFO - Connecting to BLE device: PIR-UnoWiFiRev2 (08:3A:F2:B0:A7:9A), attempt 1/3, timeout 45.0s
+2026-03-14 14:28:22.928169 - INFO - BLE connected
+2026-03-14 14:28:22.980186 - INFO - PIR notification value=0
+2026-03-14 14:28:26.905951 - INFO - PIR notification value=1
+2026-03-14 14:28:28.043011 - INFO - PIR notification value=0
+2026-03-14 14:28:58.529745 - INFO - PIR notification value=1
+2026-03-14 14:28:59.669503 - INFO - PIR notification value=0
+2026-03-14 14:29:03.787602 - INFO - PIR notification value=1
+2026-03-14 14:29:04.881757 - INFO - PIR notification value=0
+2026-03-14 14:29:09.816461 - INFO - PIR notification value=1
+2026-03-14 14:29:10.916928 - INFO - PIR notification value=0
+2026-03-14 14:29:15.552142 - INFO - PIR notification value=1
+2026-03-14 14:29:16.683400 - INFO - PIR notification value=0
+2026-03-14 14:29:20.327130 - INFO - PIR notification value=1
+2026-03-14 14:29:21.419719 - INFO - PIR notification value=0
+2026-03-14 14:29:25.005092 - INFO - PIR notification value=1
+2026-03-14 14:29:26.101024 - INFO - PIR notification value=0
+2026-03-14 14:29:30.732974 - INFO - PIR notification value=1
+2026-03-14 14:29:31.832561 - INFO - PIR notification value=0
+2026-03-14 14:29:36.545346 - INFO - PIR notification value=1
+2026-03-14 14:29:37.683592 - INFO - PIR notification value=0
+2026-03-14 14:29:41.370735 - INFO - PIR notification value=1
+2026-03-14 14:29:42.449557 - INFO - PIR notification value=0
+2026-03-14 14:29:46.432772 - INFO - PIR notification value=1
+2026-03-14 14:29:47.534755 - INFO - PIR notification value=0
+2026-03-14 14:29:51.164438 - INFO - PIR notification value=1
+2026-03-14 14:29:52.264743 - INFO - PIR notification value=0
+2026-03-14 14:29:56.418373 - INFO - PIR notification value=1
+2026-03-14 14:29:57.514510 - INFO - PIR notification value=0
+2026-03-14 14:30:01.181136 - INFO - PIR notification value=1
+2026-03-14 14:30:02.282565 - INFO - PIR notification value=0
+2026-03-14 14:30:13.127810 - ERROR - Unhandled BLE worker error
+Traceback (most recent call last):
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 49, in run
+    asyncio.run(self._run_ble())
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\lnick\Documents\Programming\Projects\Aquaponics-Pump-Control\main.py", line 132, in _run_ble
+    await client.stop_notify(self.characteristic_uuid)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\__init__.py", line 872, in stop_notify
+    await self._backend.stop_notify(characteristic)
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\bleak\backends\winrt\client.py", line 1070, in stop_notify
+    await gatt_char.write_client_characteristic_configuration_descriptor_with_result_async(
+  File "C:\Users\lnick\anaconda3\envs\AllLibs\Lib\site-packages\winrt\runtime\_internals.py", line 245, in wait
+    return op.get_results()
+           ^^^^^^^^^^^^^^^^
+OSError: [WinError -2147023673] The operation was canceled by the user.
+2026-03-14 14:30:13.151409 - ERROR - BLE error: [WinError -2147023673] The operation was canceled by the user.
