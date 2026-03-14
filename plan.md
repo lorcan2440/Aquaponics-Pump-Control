@@ -8,7 +8,7 @@
 - Arduino Uno WiFi
 - Peristaltic (positive displacement) pump for small scale
 - SMPS, create 24 V busbar
-- Buck converter from 24 V to 5 V for arduino (LM2596)
+- Buck converter from 24 V to 8 V for arduino (LM2596)
 
 ## Part 2 - Hydroponics
 
