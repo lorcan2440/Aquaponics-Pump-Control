@@ -9,8 +9,8 @@ The first part will be building a simple sump of volume 30 L, so that the pump f
 - [x] Soldering iron, helping hands, solder, desoldering pump and sandpaper
 - [x] Mains to DC converter, 230 V AC to 24 V DC, 2 A ([Tiger Power Supplies via CPC Farnell](https://cpc.farnell.com/tiger-power-supplies/tp2448/uk-mains-ac-dc-power-supply-24v-dc-2a-48w-25mm-dc-plug/dp/PW05878))
 - [x] DC barrel jack adapter (2.5 mm x 5.5 mm) ([AliExpress](https://www.aliexpress.com/))
-- [ ] Peristaltic pump, 24 V DC, 500ml/min, 1.4 A ([AliExpress](https://www.aliexpress.com/))
-- [ ] PharMed BPT Tubing (6.4 mm x 9.6 mm) ([AliExpress](https://www.aliexpress.com/))
+- [x] Peristaltic pump, 24 V DC, 500ml/min, 1.4 A ([AliExpress](https://www.aliexpress.com/))
+- [x] PharMed BPT Tubing (6.4 mm x 9.6 mm) ([AliExpress](https://www.aliexpress.com/))
 
 ### Electronics list:
 

@@ -24,14 +24,9 @@ class BleWorker(QtCore.QThread):
 	status_changed = QtCore.pyqtSignal(str)
 	error_occurred = QtCore.pyqtSignal(str)
 
-	def __init__(
-		self,
-		device_name: str,
-		service_uuid: str,
-		characteristic_uuid: str,
-		connect_timeout: float,
-		connect_retries: int,
-	):
+	def __init__(self, device_name: str, service_uuid: str, characteristic_uuid: str, 
+		    connect_timeout: float, connect_retries: int):
+
 		super().__init__()
 		self.device_name = device_name
 		self.service_uuid = service_uuid.lower()
