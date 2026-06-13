@@ -1,7 +1,12 @@
 __pycache__/
 .pio/
+.venv/
 .vscode/
-include/
-lib/
+aquaponics-control-python/__pycache__/
+
+.env
+*.code-workspace
+CLAUDE.md
 debug.log
 platformio.ini
+

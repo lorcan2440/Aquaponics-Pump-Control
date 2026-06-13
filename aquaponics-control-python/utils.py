@@ -1,6 +1,9 @@
+# built-ins
 from datetime import datetime
-import sys
 import logging
+
+# external modules
+from rich.logging import RichHandler
 
 
 class MicrosecondFormatter(logging.Formatter):
@@ -22,14 +25,23 @@ def get_logger(name: str = __name__) -> logging.Logger:
     if logger.handlers:
         return logger  # avoid duplicate handlers if logger already configured
 
-    formatter = MicrosecondFormatter('%(asctime)s - %(levelname)s - %(message)s',
-                                     datefmt="%Y-%m-%d %H:%M:%S.%f")
+    formatter = MicrosecondFormatter(
+        "%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S.%f",
+    )
 
-    file_handler = logging.FileHandler('debug.log')
+    file_handler = logging.FileHandler("debug.log")
     file_handler.setFormatter(formatter)
 
-    console_handler = logging.StreamHandler(stream=sys.stdout)
-    console_handler.setFormatter(formatter)
+    console_handler = RichHandler(
+        console=None,
+        show_time=True,
+        show_path=False,
+        markup=True,
+        rich_tracebacks=True,
+        log_time_format=lambda dt: dt.strftime("%Y-%m-%d %H:%M:%S.%f"),
+    )
+    console_handler.setFormatter(logging.Formatter("%(message)s"))
 
     logger.setLevel(logging.DEBUG)
     logger.propagate = False
