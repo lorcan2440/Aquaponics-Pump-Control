@@ -1448,3 +1448,4 @@ RuntimeError: Could not find BLE device named 'PWM-UnoWiFiRev2'
 2026-06-13 17:59:51.377288 - INFO - BLE device detected: name='' local_name='' address='FE:BF:2E:64:F7:B9' rssi=-69 uuids=[]
 2026-06-13 17:59:51.379720 - INFO - BLE device detected: name='' local_name='' address='75:E9:EF:1C:46:A6' rssi=-74 uuids=[]
 2026-06-13 17:59:51.382026 - INFO - BLE scan attempt 2/5 started
+2026-06-13 18:35:44.644053 - INFO - BLE scan attempt 1/5 started
