@@ -6,22 +6,30 @@
 - [x] Black spray paint
 - [x] Net pots (12x, 3 inch diameter)
 - [x] Drill, arbor and hole saw
-- [x] Hydroponic nutrient 
-- [ ] pH strips and pH down (acidic) solution
+- [x] Hydroponic nutrient
+- [x] pH strips
 - [x] Lettuce seeds
 - [x] Lighting, timed switch and fixtures
 - [x] Blackout fabric
 
 ## Equipment List - stage 2 (Kratky)
 
-- [ ] Better grow light and timing circuit
-- [ ] pH meter
-- [ ] EC meter
+- [x] pH meter
+- [x] pH calibration solutions
+- [x] EC meter
+- [x] pH down (use lemon juice for now)
 
-## To do
+## Steps
 
-- Drill the holes with the saw
-- Spray paint the plastic containers and lids black all the way round, outside. Roughen it with sandpaper first.
+### Germination
+
+1. Soak the rockwool cubes in acidified water to remove the lime residue
+2. Put two seeds in each hole in the cube
+3. Close the holes
+4. During the day, keep the pots in the containers, keeping the light OFF
+5. During the night, put them in the refrigerator
+6. If one germinates, wait till roots appear and move it to the container and turn on the timed lights
+7. If both germinate, wait to see which one is stronger and remove the other one
 
 ## Requirements
 
