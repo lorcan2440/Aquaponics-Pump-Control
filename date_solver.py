@@ -12,7 +12,8 @@ def find_four_week_range(month: int, year: int) -> tuple[str]:
     d = (y + 31 * m // 12 + y // 4) % 7  # d = 0 for Sunday, d = 1 for Monday, d = 2 for Tuesday, ...
     first_of_month = dt.date(year, month, 1)
 
-    if 5 <= d <= 6:
+    days_in_month = (first_of_month.replace(month=month % 12 + 1, day=1) - dt.timedelta(days=1)).day
+    if d > 35 - days_in_month:
         start_date = first_of_month + dt.timedelta(days=(9 - d))
         end_date = start_date + dt.timedelta(days=28)
     else:
@@ -22,4 +23,6 @@ def find_four_week_range(month: int, year: int) -> tuple[str]:
     return start_date.strftime("%d/%m/%Y"), end_date.strftime("%d/%m/%Y")
 
 
-print(find_four_week_range(10, 2026))
+for month in range(1, 13):
+    for year in range(2024, 2030):
+        print(f"{month}/{year}: {find_four_week_range(month, year)}")
