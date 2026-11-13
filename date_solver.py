@@ -4,7 +4,7 @@ import datetime as dt
 
 def find_four_week_range(month: int, year: int) -> tuple[str]:
 
-    # variation of Zeller's congruence
+    # variation of Zeller's congruence, simplified for 2000 <= year <= 2099
     # source: page 95 of "The Perfect Sausage" by Kjartan Poskitt
     f = (14 - month) // 12
     y = year - f
@@ -19,7 +19,7 @@ def find_four_week_range(month: int, year: int) -> tuple[str]:
         start_date = first_of_month + dt.timedelta(days=(1 - d))
         end_date = start_date + dt.timedelta(days=28)
 
-    return start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d")
+    return start_date.strftime("%d/%m/%Y"), end_date.strftime("%d/%m/%Y")
 
 
-print(find_four_week_range(10, 2026))  # Example usage
+print(find_four_week_range(10, 2026))
